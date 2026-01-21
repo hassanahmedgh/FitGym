@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #e6f7ff;
+    color: #333;
+}
+
+header {
+    background: #005f99;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header a.active {
+    border-bottom: 2px solid #00ffcc;
+}
+
+.contact-section {
+    padding: 120px 50px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #00ffcc;
+    color: #005f99;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background: #005f99;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}

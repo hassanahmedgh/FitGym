@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitGym - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>FitZone</h1>
+        <nav>
+            <a href="{{ url_for('home') }}" class="active">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('membership') }}">Membership</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to FitZone</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Start your fitness journey today!</p>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Strength Training</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+            <h3>Cardio Programs</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+            <h3>Flexibility</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 FitZone. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+<script>
+
+    let navLinksHome = document.querySelectorAll('header a');
+    navLinksHome.forEach(link => {
+        if (link.href == location.href) link.classList.add('active');
+    });
+
+</script>

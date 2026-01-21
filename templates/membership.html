@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym - Membership</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='membership.css') }}">
+</head>
+<body>
+
+<header>
+<h1>FitZone</h1>
+<nav>
+<a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('membership') }}" class="active">Membership</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+</nav>
+</header>
+
+<section class="membership-hero">
+<h2>Choose Your Plan</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pick a plan that suits you best!</p>
+</section>
+
+<section class="plans">
+<div class="plan-card">
+<h3>Basic</h3>
+<p>Access to gym facilities</p>
+<p>Rs 3,500 / month</p>
+<button>Sign Up</button>
+</div>
+<div class="plan-card">
+<h3>Standard</h3>
+<p>Gym + Group Classes</p>
+<p>Rs 9,500 / 3 months</p>
+<button>Sign Up</button>
+</div>
+<div class="plan-card">
+<h3>Premium</h3>
+<p>All Access + Personal Trainer</p>
+<p>Rs 36,000 / year</p>
+<button>Sign Up</button>
+</div>
+</section>
+
+<footer>
+<p>© 2025 FitZone. All rights reserved.</p>
+</footer>
+
+<script src="membership.js"></script>
+</body>
+</html>

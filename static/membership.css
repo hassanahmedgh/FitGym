@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff0f5;
+    color: #333;
+}
+
+header {
+    background: #cc0066;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header a.active {
+    border-bottom: 2px solid #ff66aa;
+}
+
+.membership-hero {
+    background: #ff66aa;
+    color: white;
+    text-align: center;
+    padding: 150px 50px;
+}
+
+.membership-hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.membership-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.plans {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 80px 50px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+}
+
+.plan-card h3 {
+    margin-top: 0;
+    color: #cc0066;
+}
+
+.plan-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #cc0066;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+footer {
+    background: #cc0066;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
